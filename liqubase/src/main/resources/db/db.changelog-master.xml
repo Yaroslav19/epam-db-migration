@@ -1,0 +1,23 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <include file="changelog/01-create-test-user-schema.xml"
+            relativeToChangelogFile="true"/>
+
+    <include file="changelog/02-insert-data-test-user.xml"
+             relativeToChangelogFile="true"/>
+
+    <include file="changelog/03-create-company-schema.xml"
+             relativeToChangelogFile="true"/>
+
+    <include file="changelog/03-create-employee-schema.xml"
+             relativeToChangelogFile="true"/>
+
+    <include file="changelog/03-alter-test-user-schema.xml"
+             relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

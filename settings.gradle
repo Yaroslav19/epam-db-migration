@@ -1,0 +1,4 @@
+rootProject.name = 'epam-db-migration'
+
+include 'flyway'
+include 'liqubase'
